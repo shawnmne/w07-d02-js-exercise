@@ -1,0 +1,27 @@
+.purple {
+	color: #aa00aa;
+}
+
+.orange {
+	color: #f07c01;
+}
+
+.disappear {
+	display: none;
+}
+
+.blue-back {
+	background: #2368d9;
+}
+
+.orange-back {
+		background: #f07c01;
+}
+
+.right-justify {
+		text-align: right;
+}
+
+.disappear-photo {
+		display: none;
+}

@@ -2,51 +2,54 @@
 <html>
 <head>
   <title>Week 7, Day 2 Practice</title>
+  <link  rel="stylesheet" type="text/css" href="./style.css">
+  <script src="./script.js"></script>
+
 </head>
 <body>
   
-  <h1 class="header">Week 7, Day 2 Practice</h1>
+  <h1 onClick="changeWordBack(this);" class="header">Week 7, Day 2 Practice</h1>
   
   <ol>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
-    <li class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onClick="changeColor(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onClick="changeColor(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onClick="changeColor(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onClick="changeColor(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
+    <li onClick="changeColor(this);" class="list-item">Click me to turn me purple. Click me again to turn me black.</li>
   </ol>
   
-  <p> When you click <a href="#">This Link</a>, list items with a class of
-  "list-item" should turn orange. When you click <a href="#">this link</a>, they
+  <p id="first-P"> When you click <a href="#" onClick="changeListColor();">This Link</a>, list items with a class of
+  "list-item" should turn orange. When you click <a href="#" onClick="changeListBack()">this link</a>, they
   should return to whatever color they would be otherwise (this might change if
   you click on those items). This should override whether they are purple or
   not.</p>
   
-  <p>When you click<a href="#">This link</a>, the above paragraph should
-  disappear. When you click <a href="#">This link</a>, it should reappear.</p>
+  <p id="second-P">When you click<a href="#" onClick="disappearParagraph();">This link</a>, the above paragraph should
+  disappear. When you click <a href="#" onClick="reappearParagraph();">This link</a>, it should reappear.</p>
   
-  <p>When you click <a href="#">this link</a>, the above paragraph should gain a
+  <p>When you click <a href="#" onClick="paragraphColorChanger();">this link</a>, the above paragraph should gain a
   blue blackground. When you click that link again, it should become orange.
   When you click it yet another time, it should go back to having a white
   background.</p>
   
-  <p>When you click <a href="#">this link</a>, the word "Week" in the title
+  <p id="third-P">When you click <a href="#" onClick="changeWord();" >this link</a>, the word "Week" in the title
   (defined in the head) and in the h1 should both become "Eon". When you click
   the h1, both the h1 and the title should go back to saying "Week" (instead of
   "Eon").</p>
 
-  <p>When you click on this paragraph, the above paragraph should go from being
+  <p onClick="rightJustify(this);">When you click on this paragraph, the above paragraph should go from being
   left-justified to right-justified.</p>
 
-  <p>Clicking <a href="#">this link</a> changes the link's text to say "THIS
+  <p>Clicking <a id="catLink" href="#" onClick="linkAndReappear(this);">this link</a> changes the link's text to say "THIS
   LINK!!" and makes a picture appear below this paragraph. Clicking the picture
   returns the link text to what it was before and makes the picture
   disappear.</p>
   
   <!-- the picture below should start as invisible and only appear when
   something happens in the above paragraph -->
-  <img src="http://placekitten.com/g/400/300">
+  <img id="catPic" onClick="linkAndDisappear(this);" src="http://placekitten.com/g/400/300">
 
-  <p>Clicking this paragraph prompts the user for a word or phrase, then changes
+  <p onClick="changeParagraph(this);">Clicking this paragraph prompts the user for a word or phrase, then changes
   the text of this paragraph to be that word or phrase</p>
 
 </body>
